@@ -24,7 +24,7 @@
   /* Discord Root Colors */
   --background-primary: #1f2225 !important;
   --background-secondary: #1f1d22 !important;
-  --background-secondary-alt: #19171b /*var(--dracula-background)*/ !important;
+  --background-secondary-alt: #19171b !important;
   --background-tertiary: #121214 !important;
   --background-accent: #707174 !important;
   --background-floating: var(--dracula-background) !important;
