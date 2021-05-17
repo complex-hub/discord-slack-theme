@@ -1,7 +1,7 @@
 # Slack Dark Mode for Discord
 
 
-A dark theme forked from the Dracula Theme using Slack Dark Mode as a base.
+A dark theme forked from the Dracula Theme using Slack dark mode as a base.
 
 ## Installation
 
