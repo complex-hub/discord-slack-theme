@@ -7,91 +7,127 @@
 **/
 
 :root {
-  /* Dracula Colors */
-  --dracula-background: #1f1d22 !important;
-  --dracula-current-line: #4c4e51 !important;
-  --dracula-selection: #26282c !important;
-  --dracula-foreground: #b3b3b2 !important;
-  --dracula-comment: #666666 !important;
-  --dracula-cyan: #8be9fd !important;
-  --dracula-green: #50fa7b !important;
-  --dracula-orange: #ffb86c !important;
-  --dracula-pink: #ff79c6 !important;
-  --dracula-purple: #bd93f9 !important;
-  --dracula-red: #ff5555 !important;
-  --dracula-yellow: #f1fa8c !important;
+  /* slack Colors */
+  --slack-background: #1f1d22 !important;
+  --slack-current-line: #4c4e51 !important;
+  --slack-selection: #26282c !important;
+  --slack-foreground: #b3b3b2 !important;
+  --slack-accent: #0576ba !important;
+  --brand-experiment: var(--slack-accent) !important; // Main discord color
+  --slack-comment: #666666 !important;
+  --slack-cyan: #8be9fd !important;
+  --slack-green: #50fa7b !important;
+  --slack-orange: #ffb86c !important;
+  --slack-pink: #ff79c6 !important;
+  --slack-purple: #bd93f9 !important;
+  --slack-red: #ff5555 !important;
+  --slack-yellow: #f1fa8c !important;
   /* Discord Root Colors */
   --background-primary: #1f2225 !important;
   --background-secondary: #1f1d22 !important;
   --background-secondary-alt: #19171b !important;
   --background-tertiary: #121214 !important;
   --background-accent: #707174 !important;
-  --background-floating: var(--dracula-background) !important;
-  --activity-card-background: var(--dracula-background) !important;
-  --interactive-normal: var(--dracula-foreground) !important;
+  --background-floating: var(--slack-background) !important;
+  --activity-card-background: var(--slack-background) !important;
+  --interactive-normal: var(--slack-foreground) !important;
   --channeltextarea-background: #26282c !important;
-  --rs-online-color: var(--dracula-green) !important;
-  --rs-idle-color: var(--dracula-orange) !important;
-  --rs-dnd-color: var(--dracula-red) !important;
-  --rs-offline-color: var(--dracula-selection) !important;
-  --rs-streaming-color: var(--dracula-purple) !important;
-  --rs-invisible-color: var(--dracula-comment) !important;
-  --interactive-muted: var(--dracula-comment) !important;
+  --rs-online-color: var(--slack-green) !important;
+  --rs-idle-color: var(--slack-orange) !important;
+  --rs-dnd-color: var(--slack-red) !important;
+  --rs-offline-color: var(--slack-selection) !important;
+  --rs-streaming-color: var(--slack-purple) !important;
+  --rs-invisible-color: var(--slack-comment) !important;
+  //--interactive-muted: var(--slack-comment) !important;
 }
 
+/* Bot tag color */
+#app-mount .botTagRegular-2HEhHi {
+  background: var(--slack-accent);
+}
+
+/* Selected channel on server */
+#app-mount .containerDefault--pIXnN.selected-3LIHYU .content-1x5b-n {
+  background: var(--slack-accent) !important;
+}
+
+/* # icon on selected channel */
+.modeSelected-346R90 .icon-1DeIlz, .modeSelected-346R90:hover .icon-1DeIlz, .modeUnread-1qO3K1 .icon-1DeIlz, .modeUnread-1qO3K1:hover .icon-1DeIlz {
+    color: #ffffff;
+}
+
+/* Invite and channel settings on active channel */
+.actionIcon-PgcMM2 {
+    color: #ffffff;
+}
+
+/* Settings selected section */
+.side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ, .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
+    background-color: var(--slack-accent);
+}*/
+
+/* Hovered settings option */
+.side-8zPYf6 .themed-OHr7kt.item-PXvHYJ:hover:not(.disabled-1Hwwfb), .topPill-30KHOu .themed-OHr7kt.item-PXvHYJ:hover:not(.disabled-1Hwwfb) {
+    background-color: #045382;
+    color: #e6e6e6;
+}*/
+
+
+
+
 .da-acronym {
-  --background-primary: var(--dracula-selection) !important;
+  --background-primary: var(--slack-selection) !important;
 }
 
 .da-repliedMessage {
-    --background-accent: var(--dracula-selection) !important;
+    --background-accent: var(--slack-selection) !important;
 }
 
 .container-1D34oG.da-container {
-  background-color: var(--dracula-background) !important;
+  background-color: var(--slack-background) !important;
 }
 
 .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9 {
-  background-color: var(--dracula-comment) !important
+  background-color: var(--slack-comment) !important
 }
 
 .theme-dark .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG::-webkit-scrollbar-track-piece {
-  background-color: var(--dracula-selection) !important;
-  border: 4px solid var(--dracula-background) !important;
+  background-color: var(--slack-selection) !important;
+  border: 4px solid var(--slack-background) !important;
   border-radius: 8px !important;
 }
 
 /* Syntax Highlighing in Code Blocks*/
 code {
-  color: var(--dracula-foreground) !important
+  color: var(--slack-foreground) !important
 }
 span.hljs-built_in {
-  color: var(--dracula-purple) !important;
+  color: var(--slack-purple) !important;
 }
 span.hljs-keyword {
-  color: var(--dracula-pink) !important;
+  color: var(--slack-pink) !important;
 }
 span.hljs-title {
-  color: var(--dracula-cyan) !important;
+  color: var(--slack-cyan) !important;
 }
 span.hljs-attr {
-  color: var(--dracula-foreground) !important;
+  color: var(--slack-foreground) !important;
 }
 span.hljs-string {
-  color: var(--dracula-yellow) !important;
+  color: var(--slack-yellow) !important;
 }
 span.hljs-number {
-  color: var(--dracula-purple) !important;
+  color: var(--slack-purple) !important;
 }
 span.hljs-symbol {
-  color: var(--dracula-orange) !important;
+  color: var(--slack-orange) !important;
 }
 span.hljs-meta {
-  color: var(--dracula-foreground) !important;
+  color: var(--slack-foreground) !important;
 }
 span.hljs-meta-keyword {
-  color: var(--dracula-pink) !important;
+  color: var(--slack-pink) !important;
 }
 span.hljs-meta-string {
-  color: var(--dracula-orange) !important;
+  color: var(--slack-orange) !important;
 }
