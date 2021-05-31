@@ -1,0 +1,34 @@
+/**
+ * @name New Code Font
+ * @author ComplexHub
+ * @version 0.1
+ * @description Changes discord code font
+ * @source https://github.com/complex-hub/discord-slack-theme
+**/
+:root {
+    --code-font: Fira Code, Consolas, Liberation Mono, Menlo, Courier, monospace; 
+}
+
+/* CODEBLOCK */
+.markup-2BOw-j code.inline {
+  padding: 3.5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--code-font);
+  line-height: 22px;
+}
+
+code {
+  font-family: var(--code-font);
+}
+
+.before_inlineCode-1G9rTK, .after_inlineCode-1KfVgj {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3.5px 0.5px;
+}
+
+.inlineCode-2ngu6Y {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 3.5px 0.5px;
+}
